@@ -1,0 +1,39 @@
+.cta{
+    background: url("/src/assests/images/cta-bg.jpg");
+}
+
+.cta__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    color: var(--color-white);
+}
+
+.cta__container h4{
+    color: var(--color-white);
+}
+
+.cta__container .button{
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem 2rem;
+    background: linear-gradient(250deg,#4e95ed 19%,#03228f 100%);
+    border-radius: 2rem;
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+.cta__container .button:hover{
+    background: linear-gradient(180deg,#03228f 19%,#4e95ed 100%);
+}
+
+/* ========================== MEDIA QUERIES FOR MEDIUM DEVICES =====================  */
+
+@media screen and (max-width: 990px) {
+    .cta__container{
+        flex-direction: column;
+    }
+     
+    
+  }
+

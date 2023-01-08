@@ -1,0 +1,21 @@
+.whyUs__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.whyUs__container h5{
+    border: none;
+    border-radius: 2rem;
+    background: #1273EB17;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    color: var(--color-blue);
+    margin-bottom: 0 auto;
+}
+
+.whyUs__container p{
+    margin: 1rem;
+    font-size: 1rem;
+}

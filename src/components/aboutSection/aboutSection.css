@@ -1,0 +1,37 @@
+.aboutSection__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.aboutSection__description h5{
+    border: none;
+    border-radius: 2rem;
+    background: #1273EB17;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    color: var(--color-blue);
+    margin-bottom: 1rem;
+}
+
+.aboutSection__description h4{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.aboutSection__description p{
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+
+/* ========================== MEDIA QUERIES FOR MEDIUM DEVICES =====================  */
+
+@media screen and (max-width: 990px) {
+    .aboutSection__container{
+        grid-template-columns: 1fr;
+    }
+  
+    
+  }
+

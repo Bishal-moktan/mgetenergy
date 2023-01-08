@@ -1,0 +1,33 @@
+.dropDown{
+    position: relative;
+    cursor: pointer;
+}
+
+.dropDown p{
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+.dropDown p:hover{
+    color: var(--color-primary);
+}
+
+.dropDown-content{
+    display: none;
+    position: absolute;
+  min-width: 18rem;
+  box-shadow: 1rem 1rem 0.5rem rgba(0,0,0,0.1);
+  background-color: var(--color-white);
+  z-index: 999;
+  padding: 1rem 3rem;
+
+}
+
+.dropDown-content .link{
+    display: block;
+   
+}
+
+.dropDown:hover .dropDown-content{
+    display: block;
+}

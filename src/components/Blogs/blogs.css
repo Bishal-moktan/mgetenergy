@@ -1,0 +1,87 @@
+.blog__container{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.blog__container-card{
+    background-color: var(--color-white);
+    padding: 0.4rem;
+    border-radius: 0.9rem;
+    box-shadow: 1rem 1rem 0.9rem rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+}
+
+.blog__container-card:hover{
+    transform: translateY(-1rem);
+}
+
+.blog__container-card header .info{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blog__container-card .info-details{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog__container-card .blog-icon{
+    color: var(--color-primary);
+}
+
+.blog__container-card header .tag{
+    background: linear-gradient(to right,#03228f 0,#03228f 0,#03228f 26%,#4e95ed 100%,#2989d8 100%,#207cca 100%,#0b70e1 100%);
+    color: var(--color-white);
+    padding: 0.6rem;
+    border-radius: 2rem;
+    position: absolute;
+    top: 9rem;
+    right: 1rem;
+}
+
+.blog__container-content{
+    text-align: justify;
+    padding: 1rem;
+}
+
+.blog__container-content h2{
+    font-weight: 500;
+}
+
+.blog__container-content h4{
+    font-weight: 300;
+    color: var(--color-black);
+}
+
+.blog__container-content .btn{
+    transition: var(--transition);
+}
+
+.blog__container-content .btn:hover, 
+.blog__container-content h2:hover{
+    color: var(--color-primary);
+}
+
+
+/* ========================== MEDIA QUERIES FOR MEDIUM DEVICES =====================  */
+
+@media screen and (max-width: 990px) {
+    
+  .blog__container-card header .tag{
+    font-size: 0.8rem;
+  }
+    
+  }
+
+/* ========================== MEDIA QUERIES FOR SMALL DEVICES =====================  */
+
+@media screen and (max-width: 600px) {
+    .services{
+       font-size: 1.2rem;
+    }
+    
+  }

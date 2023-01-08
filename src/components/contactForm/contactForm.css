@@ -1,0 +1,107 @@
+.contactForm__container{
+    display: grid;
+    grid-template-columns: 30% 65%;
+    gap: 5%;
+    margin-top: 6rem;
+}
+
+.contactForm__container-links{
+    background: linear-gradient(250deg,#4e95ed 0,#03228f 100%);
+    color: var(--color-white);
+    padding: 3rem 1rem;
+    border-radius: 1rem;
+
+}
+
+.contactForm__container-links .links{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contactForm__container-links .links .link{
+    display: flex;
+    gap: 1rem;
+}
+
+.contactForm__container-links .icon-container{
+    background: var(--color-white);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: var(--color-darkblue);
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text-white{
+    color: var(--color-white);
+    font-size: 1rem;
+}
+
+.contactForm__container-form .form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contactForm__container-form h1{
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.contactForm__container-form .form .form-inputs{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.contactForm__container-form input{
+    width: 100%;
+    height: 3rem;
+    padding: 2rem 1rem;
+    background: #f6f7f9;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+.contactForm__container-form textarea{
+    padding: 2rem 1rem;
+    background: #f6f7f9;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+
+.contactForm__container-form button{
+    width: fit-content;
+    padding: 1rem 2rem;
+    background: linear-gradient(250deg,#4e95ed 19%,#03228f 100%);
+    border-radius: 2rem;
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+.contactForm__container-form button:hover{
+    background: linear-gradient(180deg,#03228f 19%,#4e95ed 100%);
+
+}
+
+/* ========================== MEDIA QUERIES FOR MEDIUM DEVICES =====================  */
+
+@media screen and (max-width: 990px) {
+    .contactForm__container{
+        grid-template-columns: 1fr;
+    }
+    
+    .contactForm__container-form button{
+        margin-bottom: 2rem;
+    }
+    
+  }
+

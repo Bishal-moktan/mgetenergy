@@ -1,0 +1,76 @@
+.services__container{
+    margin-top: 3rem;
+    background: #f6f7f9;
+    text-align: center;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.service{
+    background-color: white;
+    padding: 2rem;
+    text-align: justify;
+    border-radius: 0.9rem;
+    box-shadow: 1rem 1rem 0.9rem rgba(0,0,0,0.1);
+}
+
+p{
+    color: var(--color-light);
+    font-weight: 300;
+}
+h2{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+h4{
+    color: #03228f;
+    font-weight: 400;
+}
+
+
+
+.service:first-child:hover{
+    background-color: var(--color-orange);
+}
+.service:nth-child(2):hover{
+    background-color: var(--color-pink);
+}
+.service:nth-child(3):hover{
+    background-color: var(--color-info);
+}
+.service:nth-child(4):hover{
+    background-color: var(--color-teal);
+}
+.service:nth-child(5):hover{
+    background-color: var(--color-indigo);
+}
+.service:nth-child(6):hover{
+    background-color: var(--color-blue);
+}
+
+.service:hover p, .service:hover h2{
+    color: var(--color-white);
+}
+
+/* ========================== MEDIA QUERIES FOR MEDIUM DEVICES =====================  */
+
+@media screen and (max-width: 990px) {
+    .services{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+    
+  }
+
+/* ========================== MEDIA QUERIES FOR SMALL DEVICES =====================  */
+
+@media screen and (max-width: 600px) {
+    .services{
+        grid-template-columns: 1fr;
+    }
+    
+  }
